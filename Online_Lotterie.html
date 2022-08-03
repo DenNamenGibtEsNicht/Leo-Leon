@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lotterie Wifi
+        </title>
+    </head>  
+
+    <body>
+        
+        <input type="number" min="1" max="45" id="input1">
+        <input type="number" min="1" max="45" id="input2">
+        <input type="number" min="1" max="45" id="input3">
+        
+        <button type="button" onclick="Submit();">Bestätigen</button>
+
+        <script>
+           function Submit(){
+           
+          var input1js = document.getElementById("input1").value;
+          var input2js = document.getElementById("input2").value;
+          var input3js = document.getElementById("input3").value;
+
+          if(input1js >= 1){
+            if(input1js <= 45){
+                alert("richtig");
+            }else{
+            alert("Bitte geben sie beim ersten Feld eine Zahl von 1 bis 45 ein")
+                   }
+
+           } else{
+            alert("Bitte geben sie beim ersten Feld  eine Zahl von 1 bis 45 ein")
+                   }
+                   if(input2js >= 1){
+            if(input2js <= 45){
+                alert("richtig");
+            }else{
+            alert("Bitte geben sie beim zweiten Feld eine Zahl von 1 bis 45 ein")
+                   }
+
+           } else{
+            alert("Bitte geben sie beim zweiten Feld eine Zahl von 1 bis 45 ein")
+                   }
+                   if(input3js >= 1){
+            if(input3js <= 45){
+                alert("richtig");
+            }else{
+            alert("Bitte geben sie beim dritten Feld eine Zahl von 1 bis 45 ein")
+                   }
+
+           } else{
+            alert("Bitte geben sie beim dritten eine Zahl von 1 bis 45 ein")
+                   }
+        }
+        </script>  
+    </body>
+</html>
